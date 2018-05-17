@@ -7,6 +7,8 @@ name = "pypi"
 
 [packages]
 
+Django = "==1.11.4"
+pytz = "==2018.3"
 
 
 [dev-packages]
