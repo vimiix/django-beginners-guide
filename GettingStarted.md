@@ -1,19 +1,10 @@
-# 一个完整的Django入门指南  - 第1部分
+# Django入门指南-第1章：环境搭建
 
-> 译者：[vimiix](https://github.com/vimiix)
-> 
-> 原文地址：[https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
-
-
-![](./statics/1-1.jpg)
-
-----
-
-## 前言
+###  前言
 
 ![](./statics/1-2.jpg)
 
-今天我将开始一个关于 Django 基础知识的全新系列教程。这是一个开始学习 Django 的完整入门指南。教程材料一共会被分为七个部分。我们将从安装，开发环境的准备，模型，视图，模板，URL到更高级的主题（如迁移，测试和部署）中详细探讨所有基本概念。
+今天我将开始一个关于 Django 基础知识的全新系列教程。这是一个开始学习 Django 的完整入门指南。教程材料一共会被分为七个部分（译注：被我们拆分为27个小章节）。我们将从安装，开发环境的准备、模型、视图、模板、URL到更高级的主题（如迁移、测试和部署）中详细探讨所有基本概念。
 
 我想做一些不一样的事情。一个容易学习，内容丰富且不失趣味的教程。我的想法是在文章中穿插一些漫画的方式来演示说明相应的概念和场景。我希望大家能够享受这种阅读！
 
@@ -29,7 +20,7 @@
 
 ---
 
-## 为什么要学习Django?
+###  为什么要学习Django?
 
 Django是一个用python编写的Web框架。Web框架是一种软件，基于web框架可以开发动态网站，各种应用程序以及服务。它提供了一系列工具和功能，可以解决许多与Web开发相关的常见问题，比如：安全功能，数据库访问，会话，模板处理，URL路由，国际化，本地化，等等。
 
@@ -52,7 +43,7 @@ Django的开发得到了[Django软件基金会](https://www.djangoproject.com/fo
 
 ---
 
-## 安装
+###  安装
 
 我们需要做的第一件事是在我们的电脑上安装一些程序，以便能够开始使用django。基本的设置包括安装**Python**，**Virtualenv**和**Django**。
 
@@ -64,7 +55,7 @@ Django的开发得到了[Django软件基金会](https://www.djangoproject.com/fo
 
 在后面你会看到使用它是非常简单的！
 
-## 安装 Python 3.6.2
+###  安装 Python 3.6.2
 
 我们想要做的第一件事是安装最新版的Python，那就是**Python 3.6.2**。至少是在我写这篇教程的时候。如果有更新的版本，请使用新版。接下来的步骤也应该保持大致相同的做法。
 
@@ -114,7 +105,7 @@ Python 3.6.2
 
 很棒，python已经启动并正在运行。下一步：虚拟环境！
 
-## 安装 Virtualenv
+###  安装 Virtualenv
 
 接下来这一步，我们将通过**pip**(*一个管理和安装Python包的工具*)来安装**Virtualenv**。
 
@@ -179,7 +170,7 @@ deactivate
 
 但是，我们现在先保持激活状态来进行下一步。
 
-## 安装 Django 1.11.4
+###  安装 Django 1.11.4
 
 很简单，现在我们已经启动了**venv**，运行以下命令来安装django：
 
@@ -187,7 +178,7 @@ deactivate
 pip install django==1.11.4
 
 # 译注：目前django已经升级到2.x版本，这里为了跟后续教程内容保持一直，所以必须指定版本号进行安装
-# 除非你有能力 debug，否则不建议你使用django 2.x
+# 除非你有能力 debug，否则不建议你使用django 2.x，等你熟悉Django后，再升级都Django2.0 也不迟，因为两个版本的差异非常小
 ```
 
 ![](./statics/1-10.png)
